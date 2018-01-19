@@ -1,0 +1,7 @@
+account:
+  user: your-github-username
+  password: your-github-password
+github:
+  team: [lsitu, dt-ucsd, VivianChu, hweng, mcritchlow ]
+  community_organizations: [ samvera, samvera-labs, projectblacklight, fcrepo4 ]
+  local_organization: ucsdlib
