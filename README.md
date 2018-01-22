@@ -11,8 +11,8 @@ and open source/community projects on GitHub.
 4. `cd github-reports`
 5. `bundle install`
 6. Setup `config.yml` as follows:
-- `cp config.yml.sample config.yml`
-- Add your GitHub username and password to the `user` and `password` fields,
+    1. `cp config.yml.sample config.yml`
+    1. Add your GitHub username and password to the `user` and `password` fields,
   replacing the existing boilerplate defaults
 7. Run report(s) below as needed
 
@@ -27,7 +27,8 @@ To Use:
 1. `./open_issues.rb`
 2. Open up the generated `open_issues.confluence` page and do a select all +
    copy
-3. Follow instructions in `Embedding Report Data in Confluence` section
+3. Follow instructions in [Embedding Report Data in
+   Confluence](#embedding-report-data-in-confluence) section
 
 ### Closed Issues(*COMING SOON*)
 Where: `closed_issues.rb`
@@ -38,12 +39,13 @@ To Use:
 1. `./closed_issues.rb`
 2. Respond to prompt with your desired date range.
 Examples:
-- 2 week period: `2017-12-01..2017-12-15`
-- 4 week period: `2017-12-01..2017-12-31`
-- Year (this will be SLOW): `2017-12-01..2018-12-01`
+    1. 2 week period: `2017-12-01..2017-12-15`
+    1. 4 week period: `2017-12-01..2017-12-31`
+    1. Year (this will be SLOW): `2017-12-01..2018-12-01`
 3. Open up the generated `closed_issues.confluence` page and do a select all +
    copy
-4. Follow instructions in `Embedding Report Data in Confluence` section
+4. Follow instructions in [Embedding Report Data in
+   Confluence](#embedding-report-data-in-confluence) section
 
 
 ## Embedding Report Data in Confluence ##
