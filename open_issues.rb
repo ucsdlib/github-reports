@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'octokit'
 require 'byebug'
 require 'yaml'

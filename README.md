@@ -24,7 +24,7 @@ What: A list of all tickets assigned to members of the development team that are
 currently `open`
 
 To Use:
-1. `ruby open_issues.rb`
+1. `./open_issues.rb`
 2. Open up the generated `open_issues.confluence` page and do a select all +
    copy
 3. Follow instructions in `Embedding Report Data in Confluence` section
@@ -35,7 +35,7 @@ What: A list of closed issues between a specified time frame. Usually a 2 week
 Sprint, but could be for a month, year, etc.
 
 To Use:
-1. `ruby closed_issues.rb`
+1. `./closed_issues.rb`
 2. Respond to prompt with your desired date range.
 Examples:
 - 2 week period: `2017-12-01..2017-12-15`
