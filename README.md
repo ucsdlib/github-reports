@@ -30,7 +30,7 @@ To Use:
 3. Follow instructions in [Embedding Report Data in
    Confluence](#embedding-report-data-in-confluence) section
 
-### Closed Issues(*COMING SOON*)
+### Closed Issues
 Where: `closed_issues.rb`
 What: A list of closed issues between a specified time frame. Usually a 2 week
 Sprint, but could be for a month, year, etc.
