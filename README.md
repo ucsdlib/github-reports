@@ -25,7 +25,7 @@ currently `open`
 
 To Use:
 1. `./open_issues.rb`
-2. Open up the generated `open_issues.confluence` page and do a select all +
+2. Open up the generated `open_issues.report` page and do a select all +
    copy
 3. Follow instructions in [Embedding Report Data in
    Confluence](#embedding-report-data-in-confluence) section
@@ -36,15 +36,16 @@ What: A list of closed issues between a specified time frame. Usually a 2 week
 Sprint, but could be for a month, year, etc.
 
 To Use:
-1. `./closed_issues.rb`
-2. Respond to prompt with your desired date range.
-Examples:
+1. This script expects two arguments. A `start_date` and an `end_date`. These
+   should be formatted as follows `YYYY-MM-DD`. Example: `2017-12-01`
+1. `./closed_issues.rb 2017-12-01 2017-12-31`
+More examples:
     1. 2 week period: `2017-12-01..2017-12-15`
     1. 4 week period: `2017-12-01..2017-12-31`
     1. Year (this will be SLOW): `2017-12-01..2018-12-01`
-3. Open up the generated `closed_issues.confluence` page and do a select all +
-   copy
-4. Follow instructions in [Embedding Report Data in
+1. Open up the generated `closed_issues<date-range>.report` page and do a select all +
+   copy. An example filename: `closed_issues_2017-12-01-2017-12-31.report`
+1. Follow instructions in [Embedding Report Data in
    Confluence](#embedding-report-data-in-confluence) section
 
 
