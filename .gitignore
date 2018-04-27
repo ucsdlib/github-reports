@@ -1,3 +1,4 @@
 config.yml
 *.report
 .byebug_history
+Gemfile.lock
