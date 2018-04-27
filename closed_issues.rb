@@ -31,8 +31,10 @@ organizations = config['github']['community_organizations']
 team = config['github']['team']
 closed_date_range = "#{start_date}..#{end_date}"
 
+report.puts "h1. Issues Closed Between: #{start_date} #{end_date}"
 report.puts 'h2. Community/Open Source Issues'
-report.puts '||Organization||Project||Issue||Assignee||'
+report.puts '??Includes Issues and Pull Requests??'
+report.puts '||Organization||Project||Issue/Pull Request||Assignee||'
 # community issues
 organizations.product(team).each do |org, member|
   results = client.search_issues("org:#{org} assignee:#{member} closed:#{closed_date_range}")
@@ -44,7 +46,8 @@ end
 
 # local/ucsd issues
 report.puts 'h2. UCSD Issues'
-report.puts '||Project||Issue||Assignee||'
+report.puts '??Includes Issues and Pull Requests??'
+report.puts '||Project||Issue/Pull Request||Assignee||'
 team.each do |member|
   results = client.search_issues("org:#{config['github']['local_organization']} assignee:#{member} closed:#{closed_date_range}")
   results[:items].each do |issue|
