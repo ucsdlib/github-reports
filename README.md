@@ -40,9 +40,9 @@ To Use:
    should be formatted as follows `YYYY-MM-DD`. Example: `2017-12-01`
 1. `./closed_issues.rb 2017-12-01 2017-12-31`
 More examples:
-    1. 2 week period: `2017-12-01..2017-12-15`
-    1. 4 week period: `2017-12-01..2017-12-31`
-    1. Year (this will be SLOW): `2017-12-01..2018-12-01`
+    1. 2 week period: `2017-12-01 2017-12-15`
+    1. 4 week period: `2017-12-01 2017-12-31`
+    1. Year (this will be SLOW): `2017-12-01 2018-12-01`
 1. Open up the generated `closed_issues<date-range>.report` page and do a select all +
    copy. An example filename: `closed_issues_2017-12-01-2017-12-31.report`
 1. Follow instructions in [Embedding Report Data in
