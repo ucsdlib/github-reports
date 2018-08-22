@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+
+set -x
+
+UCSD_ROOT="$HOME/projects/ucsd"
+START_DATE="2017-07-01"
+END_DATE="2018-07-01"
+REPORT_FILE="./commit-report-$START_DATE-$END_DATE"
+
+echo "before loop"
+cd "$UCSD_ROOT" || (echo "Project root directory doesn't exist" && exit 1)
+for dir in /"$UCSD_ROOT"/*/
+do
+  echo "$dir"
+  cd "$dir" || exit 1
+  commits=$(git log --oneline --since="$START_DATE" --until="$END_DATE" | wc -l)
+  echo "$dir: $commits" >> $REPORT_FILE
+done
