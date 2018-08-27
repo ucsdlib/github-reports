@@ -9,6 +9,8 @@ config = YAML.safe_load(File.read('config.yml'))
 client = Octokit::Client.new(login: config['account']['user'],
                              password: config['account']['password'])
 client.login
+client.auto_paginate = true
+
 report = File.open('open_issues.report', 'w')
 
 organizations = config['github']['community_organizations']
