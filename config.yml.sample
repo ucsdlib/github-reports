@@ -5,3 +5,8 @@ github:
   team: [lsitu, dt-ucsd, VivianChu, hweng, mcritchlow ]
   community_organizations: [ samvera, samvera-labs, projectblacklight, fcrepo4 ]
   local_organization: ucsdlib
+gitlab:
+  endpoint: https://gitlab.com/api/v4
+  personal_access_token: your-personal-access-token
+  projects: [ surfliner/surfliner, ucsd-gitlab/library/ldap_sync, chronopolis/chron-dashboard ]
+  team: [lsitu, dt-ucsd, tchu1, hweng, mcritchlow1 ]
