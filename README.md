@@ -12,8 +12,13 @@ and open source/community projects on GitHub.
 5. `bundle install`
 6. Setup `config.yml` as follows:
     1. `cp config.yml.sample config.yml`
-    1. Add your GitHub username and password to the `user` and `password` fields,
-  replacing the existing boilerplate defaults
+    1. Add your GitHub username and password to the `user` and `password`
+       fields, replacing the existing boilerplate defaults
+    1. Create a [personal access token for Gitlab][pac-gitlab], check the `api`
+       Scope checkbox when creating it. Add this token to LastPass, or whatever
+       fits your workflow
+    1. Add your Gitlab personal access token to the `personal_access_token`
+       field, replacing the existing boilerplate defaults
 7. Run report(s) below as needed
 
 ## Reports ##
@@ -63,3 +68,4 @@ further information.
 6. Edit the page as needed and save
 
 [markup]:https://confluence.atlassian.com/doc/confluence-wiki-markup-251003035.html#ConfluenceWikiMarkup-Tables
+[pac-gitlab]:https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#creating-a-personal-access-token
